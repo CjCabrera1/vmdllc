@@ -1,0 +1,18 @@
+section {
+    height: 1020px;
+    width: 480px;
+    border: 1px solid #ccc;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    padding: 30px;
+    padding-top: 45px;
+}
+.menu{
+    
+}
