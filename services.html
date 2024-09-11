@@ -4,28 +4,158 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Visiting Medical Doctors Inc</title>
-  
+  <title>Our Services - Visiting Medical Doctors Inc</title>
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="services-page">
 
-  <!-- This div will be replaced by the navbar -->
+  <!-- Navbar Placeholder -->
   <div id="navbar-placeholder"></div>
 
-  <!-- Your content goes here -->
-  <h1>Services<h1>
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="row">
+        <!-- Left side: Image -->
+        <div class="col-md-6">
+          <img src="assets/images/services.jpg" class="img-fluid" alt="Service Photo">
+        </div>
 
-  <!-- Bootstrap JS (with Popper.js for components like dropdowns) -->
+        <!-- Right side: Accordion for Services -->
+        <div class="col-md-6">
+          <div class="accordion" id="servicesAccordion">
+            <!-- Sick Visits -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSickVisits" aria-expanded="true" aria-controls="collapseSickVisits">
+                  Sick Visits
+                </button>
+              </h2>
+              <div id="collapseSickVisits" class="accordion-collapse collapse show" data-bs-parent="#servicesAccordion">
+                <div class="accordion-body">
+                  Sick visits for homebound patients.
+                </div>
+              </div>
+            </div>
+
+            <!-- TeleHealth Visits -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTeleHealth" aria-expanded="false" aria-controls="collapseTeleHealth">
+                  TeleHealth Visits
+                </button>
+              </h2>
+              <div id="collapseTeleHealth" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                <div class="accordion-body">
+                  Remote consultations via video.
+                </div>
+              </div>
+            </div>
+
+            <!-- Wound Care -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWoundCare" aria-expanded="false" aria-controls="collapseWoundCare">
+                  Wound Care
+                </button>
+              </h2>
+              <div id="collapseWoundCare" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                <div class="accordion-body">
+                  Treatment for acute and chronic wounds.
+                </div>
+              </div>
+            </div>
+
+            <!-- Preventive Care -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreventiveCare" aria-expanded="false" aria-controls="collapsePreventiveCare">
+                  Preventive Care
+                </button>
+              </h2>
+              <div id="collapsePreventiveCare" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                <div class="accordion-body">
+                  Services to prevent illness and promote health.
+                </div>
+              </div>
+            </div>
+
+            <!-- Care Management for High-Risk Patients -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCareManagement" aria-expanded="false" aria-controls="collapseCareManagement">
+                  Care Management for High-Risk Patients
+                </button>
+              </h2>
+              <div id="collapseCareManagement" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                <div class="accordion-body">
+                  Coordinated care for patients at high risk.
+                </div>
+              </div>
+            </div>
+
+            <!-- Reduction of Emergency Department Use and Hospitalization -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReductionED" aria-expanded="false" aria-controls="collapseReductionED">
+                  Reduction of Emergency Department Use and Hospitalization
+                </button>
+              </h2>
+              <div id="collapseReductionED" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                <div class="accordion-body">
+                  Strategies to minimize emergency visits and hospital stays.
+                </div>
+              </div>
+            </div>
+
+            <!-- Post Hospitalization Discharge Follow-Ups -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDischargeFollowUps" aria-expanded="false" aria-controls="collapseDischargeFollowUps">
+                  Post Hospitalization Discharge Follow-Ups
+                </button>
+              </h2>
+              <div id="collapseDischargeFollowUps" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                <div class="accordion-body">
+                  Follow-up care after hospital discharge.
+                </div>
+              </div>
+            </div>
+
+            <!-- Medication Management and Adherence Strategies -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMedicationManagement" aria-expanded="false" aria-controls="collapseMedicationManagement">
+                  Medication Management and Adherence Strategies
+                </button>
+              </h2>
+              <div id="collapseMedicationManagement" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                <div class="accordion-body">
+                  Strategies for managing medications and ensuring adherence.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="assistance-section">
+    <div id="help-placeholder"></div>
+  </section>
+
+  <!-- Bootstrap JS and dependencies -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   
   <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
-
 
 </body>
 </html>

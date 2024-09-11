@@ -2,97 +2,68 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Adjust height relative to viewport height for responsiveness */
+    height: 100vh; 
     overflow: hidden;
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the container */
+    object-fit: cover; 
 }
 
 .hero-text {
     position: absolute;
     top: 50%;
-    left: 20%; /* Original positioning */
+    left: 20%; 
     transform: translate(-50%, -50%);
-    color: white; /* Adjust based on your image */
+    color: white; 
     text-align: center;
-    padding: 1rem; /* Adjust padding for responsiveness */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
-    width: 80%; /* Adjust width to ensure text fits */
-    max-width: 600px; /* Max width to prevent the text from becoming too wide */
-    box-sizing: border-box; /* Ensures padding is included in width calculations */
+    padding: 1rem; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 80%; 
+    max-width: 600px; 
+    box-sizing: border-box; 
 }
 
 /* Restrict text to 3 words per line */
 .hero-text h1 {
-    font-size: 2.5vw; /* Responsive font size based on viewport width */
-    margin: 0; /* Remove default margin */
-    white-space: normal; /* Allow text to wrap */
-    line-height: 1.2; /* Adjust line height to ensure proper wrapping */
+    font-size: 2.5vw; 
+    margin: 0; 
+    white-space: normal; 
+    line-height: 1.2; 
 }
 
 .hero-text p {
-    font-size: 2.5vw; /* Responsive font size based on viewport width */
-    margin: 0; /* Remove default margin */
-    white-space: normal; /* Allow text to wrap */
-    line-height: 1.5; /* Adjust line height to ensure proper wrapping */
-}
-
-/* Media Queries for Smaller Screens */
-@media (max-width: 768px) {
-    .hero-text {
-        width: 90%; /* Adjust width for smaller screens */
-    }
-
-    .hero-text h1 {
-        font-size: 6vw; /* Increase font size for smaller screens */
-    }
-
-    .hero-text p {
-        font-size: 3vw; /* Increase font size for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text {
-        width: 95%; /* Further adjust width for very small screens */
-    }
-
-    .hero-text h1 {
-        font-size: 7vw; /* Increase font size for very small screens */
-    }
-
-    .hero-text p {
-        font-size: 4vw; /* Increase font size for very small screens */
-    }
+    font-size: 2.5vw; 
+    margin: 0; 
+    white-space: normal; 
+    line-height: 1.5; 
 }
 
 /* Navbar Styling */
 .navbar {
-    padding: 1rem 2rem; /* Adjust padding as needed */
-    height: 80px; /* Adjust height as needed */
+    padding: 1rem 2rem; 
+    height: 80px; 
 }
 
 .navbar-brand {
-    font-size: 1.8rem; /* Adjust font size as needed */
+    font-size: 1.8rem; 
 }
 
 .navbar-nav .nav-link {
-    font-size: 1.8rem; /* Adjust font size as needed */
+    font-size: 1.8rem; 
 }
 
 .navbar-nav .nav-item {
-    padding-left: 1rem; /* Add padding between nav items */
+    padding-left: 1rem; 
 }
 
 /* Services Section Styling */
 .services-section {
-    position: relative; /* Ensure the section is positioned relative for absolute children */
-    padding: 2rem; /* Padding around the section */
-    background-color: #f8f9fa; /* Light background color for contrast */
+    position: relative; 
+    padding: 2rem; 
+    background-color: #ffffff; 
 }
 
 .cta-text {
@@ -105,9 +76,8 @@
 .cta-text h2 {
     font-size: 2.6rem;
     margin: 0;
-    
     color: #333;
-    font-family:Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 .services-cta-section {
@@ -115,37 +85,37 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 1rem 2rem; /* Adjust padding as needed */
-    font-size: 1.2rem; /* Adjust font size as needed */
-    color: white; /* Text color */
-    background-color: #d648fa; /* Light purple background */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline from link */
-    text-align: center; /* Center the text inside */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    padding: 1rem 2rem; 
+    font-size: 1.2rem; 
+    color: white; 
+    background-color: #d648fa; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    text-align: center; 
+    transition: background-color 0.3s ease; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .cta-button:hover {
-    background-color: #7d0bc9; /* Darker purple on hover */
+    background-color: #7d0bc9; 
 }
 
 .about-us-link {
-    display: block; /* Make the link a block element to fill the section */
-    text-decoration: none; /* Remove underline from the link */
-    color: inherit; /* Inherit text color from parent */
+    display: block; 
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .about-us-section {
     position: relative;
     width: 100%;
-    height: auto; /* Set height to auto to fit content */
-    margin: rem 0; /* Adjust margins as needed */
+    height: auto; 
+    margin: rem 0; 
 }
 
 .about-us-container {
@@ -156,64 +126,65 @@
 
 .about-us-container img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the container */
+    height: auto; 
+    object-fit: cover; 
 }
+
 .about-us-overlay {
     position: absolute;
     top: 20%;
     left: 20%;
     transform: translate(-55%, -10%);
-    color: white; /* Adjust based on your image */
+    color: white; 
     text-align: center;
-    padding: 1rem; /* Adjust padding for responsiveness */
-    
-    width: 80%; /* Adjust width to ensure text fits */
-    max-width: 600px; /* Max width to prevent text from becoming too wide */
-    box-sizing: border-box; /* Ensures padding is included in width calculations */
-    font-family:Helvetica, sans-serif;
+    padding: 1rem; 
+    width: 80%; 
+    max-width: 600px; 
+    box-sizing: border-box; 
+    font-family: Helvetica, sans-serif;
 }
 
 .about-us-overlay h3 {
-    font-size: 4rem; /* Adjust font size as needed */
-    color:#ffffff;
-    margin-bottom: 0.5rem; /* Margin between title and text */
+    font-size: 4rem; 
+    color: #ffffff;
+    margin-bottom: 0.5rem; 
 }
 
 .about-us-overlay p {
-    font-size: 22px; /* Adjust font size as needed */
+    font-size: 22px; 
 }
+
 /* Learn More Link Styling */
 .learn-more-link {
     display: inline-block;
     font-weight: bold;
-    padding: 0.5rem 1rem; /* Adjust padding as needed */
-    font-size: 1rem; /* Adjust font size as needed */
-    color: #ffffff; /* Light purple text color */
-    background-color: transparent; /* Transparent background */
-    border: 2px solid #d648fa; /* Light purple border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline from link */
-    margin-top: 10px; /* Space above the button */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
-    font-family:Arial, Helvetica, sans-serif;
+    padding: 0.5rem 1rem; 
+    font-size: 1rem; 
+    color: #ffffff; 
+    background-color: transparent; 
+    border: 2px solid #d648fa; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    margin-top: 10px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .learn-more-link:hover {
-    color: white; /* White text color on hover */
-    background-color: #d648fa; /* Light purple background on hover */
+    color: white; 
+    background-color: #d648fa; 
 }
 
 /* Assistance Section Styling */
 .assistance-section {
-    padding: 2rem; /* Add padding for spacing */
-    background-color: #87c3ff; /* Light background color for contrast */
-    text-align: center; /* Center-align text */
+    padding: 2rem;
+    background-color: #87c3ff; 
+    text-align: center; 
 }
 
 .assistance-text {
     max-width: 600px;
-    margin: 0 auto; /* Center-align the container */
+    margin: 0 auto; 
 }
 
 .assistance-button {
@@ -221,7 +192,7 @@
     padding: 1rem 2rem;
     font-size: 1.2rem;
     color: white;
-    background-color: #d648fa; /* Light purple background */
+    background-color: #d648fa; 
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
@@ -230,5 +201,85 @@
 }
 
 .assistance-button:hover {
-    background-color: #7d0bc9; /* Darker purple on hover */
+    background-color: #7d0bc9; 
+}
+
+/* Footer Section Styling */
+.footer-section {
+    background-color: #ffffff; 
+    padding: 2rem;
+    color: #000000;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 150px; 
+    margin-bottom: 1rem;
+}
+
+.footer-info p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+/* Services Section Styling */
+
+.services-section {
+    position: relative;
+    padding: 2rem;
+    background-color: #bbbbbb;
+    margin-top: 80px; /* Add margin to ensure it doesn't overlap with the navbar */
+}
+
+/* You can also add padding to the top of the section to prevent overlap */
+.services-section {
+    padding-top: 100px; /* Adjust as needed based on your navbar height */
+}
+
+/* Make sure the image and accordion have no z-index conflicts */
+.services-section img {
+    z-index: 1; /* Ensure the image is behind other elements if necessary */
+}
+
+.accordion {
+    z-index: 1; /* Ensure the accordion is behind the navbar if necessary */
+}
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .hero-text {
+        width: 90%; 
+    }
+
+    .hero-text h1 {
+        font-size: 6vw; 
+    }
+
+    .hero-text p {
+        font-size: 3vw; 
+    }
+
+    .footer-info {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        width: 95%; 
+    }
+
+    .hero-text h1 {
+        font-size: 7vw; 
+    }
+
+    .hero-text p {
+        font-size: 4vw; 
+    }
 }
