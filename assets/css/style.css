@@ -1,0 +1,119 @@
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Adjust height relative to viewport height for responsiveness */
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 20%; /* Original positioning */
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust based on your image */
+    text-align: center;
+    padding: 1rem; /* Adjust padding for responsiveness */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+    width: 80%; /* Adjust width to ensure text fits */
+    max-width: 600px; /* Max width to prevent the text from becoming too wide */
+    box-sizing: border-box; /* Ensures padding is included in width calculations */
+}
+
+/* Restrict text to 3 words per line */
+.hero-text h1 {
+    font-size: 2.5vw; /* Responsive font size based on viewport width */
+    margin: 0; /* Remove default margin */
+    white-space: normal; /* Allow text to wrap */
+    line-height: 1.2; /* Adjust line height to ensure proper wrapping */
+}
+
+.hero-text p {
+    font-size: 2.5vw; /* Responsive font size based on viewport width */
+    margin: 0; /* Remove default margin */
+    white-space: normal; /* Allow text to wrap */
+    line-height: 1.5; /* Adjust line height to ensure proper wrapping */
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .hero-text {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .hero-text h1 {
+        font-size: 6vw; /* Increase font size for smaller screens */
+    }
+
+    .hero-text p {
+        font-size: 3vw; /* Increase font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        width: 95%; /* Further adjust width for very small screens */
+    }
+
+    .hero-text h1 {
+        font-size: 7vw; /* Increase font size for very small screens */
+    }
+
+    .hero-text p {
+        font-size: 4vw; /* Increase font size for very small screens */
+    }
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 1rem 2rem; /* Adjust padding as needed */
+    height: 80px; /* Adjust height as needed */
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Adjust font size as needed */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.8rem; /* Adjust font size as needed */
+}
+
+.navbar-nav .nav-item {
+    padding-left: 1rem; /* Add padding between nav items */
+}
+
+/* Services Section Styling */
+.services-section {
+    position: relative; /* Ensure the section is positioned relative for absolute children */
+    padding: 2rem; /* Padding around the section */
+    background-color: #f8f9fa; /* Light background color for contrast */
+}
+
+.cta-text {
+    max-width: 1200px;
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.cta-text h2 {
+    font-size: 2.6rem;
+    margin: 0;
+    
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.services-cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
