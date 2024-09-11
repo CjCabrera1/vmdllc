@@ -2,7 +2,7 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 80vh; /* Adjust height relative to viewport height for responsiveness */
+    height: 100vh; /* Adjust height relative to viewport height for responsiveness */
     overflow: hidden;
 }
 
@@ -107,7 +107,7 @@
     margin: 0;
     
     color: #333;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Helvetica, sans-serif;
 }
 
 .services-cta-section {
@@ -116,4 +116,119 @@
     align-items: center;
     padding: 2rem;
     background-color: #f8f9fa;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem; /* Adjust padding as needed */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    color: white; /* Text color */
+    background-color: #d648fa; /* Light purple background */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from link */
+    text-align: center; /* Center the text inside */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cta-button:hover {
+    background-color: #7d0bc9; /* Darker purple on hover */
+}
+
+.about-us-link {
+    display: block; /* Make the link a block element to fill the section */
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.about-us-section {
+    position: relative;
+    width: 100%;
+    height: auto; /* Set height to auto to fit content */
+    margin: rem 0; /* Adjust margins as needed */
+}
+
+.about-us-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.about-us-container img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container */
+}
+.about-us-overlay {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-55%, -10%);
+    color: white; /* Adjust based on your image */
+    text-align: center;
+    padding: 1rem; /* Adjust padding for responsiveness */
+    
+    width: 80%; /* Adjust width to ensure text fits */
+    max-width: 600px; /* Max width to prevent text from becoming too wide */
+    box-sizing: border-box; /* Ensures padding is included in width calculations */
+    font-family:Helvetica, sans-serif;
+}
+
+.about-us-overlay h3 {
+    font-size: 4rem; /* Adjust font size as needed */
+    color:#ffffff;
+    margin-bottom: 0.5rem; /* Margin between title and text */
+}
+
+.about-us-overlay p {
+    font-size: 22px; /* Adjust font size as needed */
+}
+/* Learn More Link Styling */
+.learn-more-link {
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #ffffff; /* Light purple text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #d648fa; /* Light purple border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from link */
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.learn-more-link:hover {
+    color: white; /* White text color on hover */
+    background-color: #d648fa; /* Light purple background on hover */
+}
+
+/* Assistance Section Styling */
+.assistance-section {
+    padding: 2rem; /* Add padding for spacing */
+    background-color: #87c3ff; /* Light background color for contrast */
+    text-align: center; /* Center-align text */
+}
+
+.assistance-text {
+    max-width: 600px;
+    margin: 0 auto; /* Center-align the container */
+}
+
+.assistance-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #d648fa; /* Light purple background */
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.assistance-button:hover {
+    background-color: #7d0bc9; /* Darker purple on hover */
 }
