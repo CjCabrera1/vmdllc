@@ -428,7 +428,7 @@ body {
         padding-top: 20px;
     }
     }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
 
     .hero-text {
         width: 95%; 
@@ -444,11 +444,8 @@ body {
     }
 
     .about-us-overlay {
-        top: 5%;
-        left: 5%;
-        transform: translate(-50%, -10%);
-        width: 95%; 
-        max-width: 400px; 
+        width: 90%;
+        padding: 1rem;
     }
 
     .about-us-overlay h3 {
@@ -458,7 +455,7 @@ body {
         line-height: 1.2;
         color: #ffffff; 
     }
-    
+
     .about-us-overlay p {
         font-size: 1.6rem;  
     }
