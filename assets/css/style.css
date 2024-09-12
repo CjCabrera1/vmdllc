@@ -464,3 +464,10 @@ body {
         padding: 1rem 0.5rem;  
     }
 }
+
+@media (max-width: 400px){
+    .about-us-overlay {
+        width: 90%;
+        padding: 1rem;
+    }
+}
