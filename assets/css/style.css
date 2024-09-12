@@ -113,23 +113,27 @@
 
 .about-us-section {
     position: relative;
-    width: 100%;
-    height: auto; 
-    margin: rem 0; 
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-color: #f5f5f5; /* Background color for the section */
 }
 
+/* About Us Container */
 .about-us-container {
     position: relative;
-    height: 100%;
     width: 100%;
+    height: auto;
+    padding: 0; /* Remove any extra padding */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
 }
 
+/* Image Styling */
 .about-us-container img {
     width: 100%;
-    height: auto; 
-    object-fit: cover; 
+    height: auto;
+    display: block; /* Ensure the image is displayed correctly */
+    margin: 0; /* Remove any margins around the image */
 }
-
 .about-us-overlay {
     position: absolute;
     top: 20%;
@@ -235,22 +239,100 @@
     position: relative;
     padding: 2rem;
     background-color: #bbbbbb;
-    margin-top: 80px; /* Add margin to ensure it doesn't overlap with the navbar */
-}
+    margin-top: 80px; 
+    padding-top: 100px; 
+}    
 
-/* You can also add padding to the top of the section to prevent overlap */
-.services-section {
-    padding-top: 100px; /* Adjust as needed based on your navbar height */
-}
 
-/* Make sure the image and accordion have no z-index conflicts */
 .services-section img {
-    z-index: 1; /* Ensure the image is behind other elements if necessary */
+    z-index: 1; 
 }
 
 .accordion {
-    z-index: 1; /* Ensure the accordion is behind the navbar if necessary */
+    z-index: 1; 
+    margin-top: 30px;
 }
+
+#help-placeholder {
+    margin-top: -50px; 
+  }
+/* About us */
+body {
+    padding-top: 70px; 
+}
+
+.about-us-section {
+    padding: 4rem 0;
+    background-color: #f5f5f5; 
+    border-bottom: 1px solid #d3d3d3; 
+}
+
+.about-us-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-us-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-us-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.gray-line {
+    border-top: 2px solid #d3d3d3;
+    margin-top: 2rem;
+}
+/* Contact Section */
+
+.contact-section {
+    padding: 2rem;
+    background-color: #f5f5f5; /* Light background color for contrast */
+  }
+  
+  .contact-heading {
+    font-size: 3rem; /* Adjust as needed */
+    font-weight: bold;
+  }
+  
+  .contact-details h2 {
+    font-size: 2rem; /* Adjust as needed */
+  }
+  
+  .contact-details p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  /* Gray Line Separator */
+  .separator {
+    height: 2px;
+    background-color: gray;
+    margin: 2rem 0;
+  }
+  
+  /* Contact Section 2 Styling */
+  .contact-section-second {
+    padding: 2rem;
+  }
+  
+  .contact-us-info .small-text {
+    font-size: 1rem; /* Smaller text */
+    font-weight: bold;
+  }
+  
+  .contact-us-info h2 {
+    font-size: 2.5rem; /* Larger text */
+    margin-top: 1rem;
+  }
+  
+  .contact-us-info .btn {
+    margin-top: 1rem;
+  }
 /* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
     .hero-text {
