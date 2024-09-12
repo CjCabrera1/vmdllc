@@ -397,11 +397,11 @@ body {
     }
 
     .about-us-overlay h3 {
-        font-size: 2.5vw; 
+        font-size: 1.6rem; 
         margin: 0;
         white-space: normal;
         line-height: 1.2;
-        color: #fff; 
+        color: #ffffff; 
     }
 
     .about-us-overlay {
@@ -428,7 +428,7 @@ body {
         padding-top: 20px;
     }
     }
-@media (max-width: 480px) {
+@media (max-width: 400px) {
 
     .hero-text {
         width: 95%; 
@@ -443,10 +443,21 @@ body {
         font-size: 4vw;
     }
 
-    .about-us-overlay h3 {
-        font-size: 3rem;  
+    .about-us-overlay {
+        top: 5%;
+        left: 5%;
+        transform: translate(-50%, -10%);
+        width: 95%; 
+        max-width: 400px; 
     }
 
+    .about-us-overlay h3 {
+        font-size: 1.6rem; 
+        margin: 0;
+        white-space: normal;
+        line-height: 1.2;
+        color: #ffffff; 
+    }
     .about-us-overlay p {
         font-size: 1.6rem;  
     }
